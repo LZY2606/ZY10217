@@ -1,0 +1,120 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #0f1420;
+  color: #d8e0ee;
+  font-size: 14px;
+}
+header {
+  padding: 16px 24px;
+  background: linear-gradient(90deg, #16203a, #0f1420);
+  border-bottom: 1px solid #2a3550;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+h1 { font-size: 20px; margin: 0; }
+h2 { font-size: 15px; margin: 0 0 12px; color: #9db4e8; }
+.conclusion {
+  padding: 4px 14px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+.conclusion.CONFORMING { background: #143d2a; color: #67e8a3; }
+.conclusion.CONFORMING_WITH_DEVIATION { background: #3d3414; color: #e8c967; }
+.conclusion.DEVIATION_PENDING { background: #3d2a14; color: #e8a067; }
+.conclusion.NON_CONFORMING { background: #3d1620; color: #e87a8f; }
+.toolbar {
+  padding: 10px 24px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #131a2a;
+  border-bottom: 1px solid #24304a;
+  flex-wrap: wrap;
+}
+button, .file-btn {
+  background: #22314f;
+  color: #cdd9f2;
+  border: 1px solid #3a4c72;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+button:hover, .file-btn:hover { background: #2c3f66; }
+.hash-line { color: #7b8bb0; font-family: ui-monospace, monospace; font-size: 12px; }
+main { padding: 16px 24px 40px; }
+.card {
+  background: #161d2e;
+  border: 1px solid #26324d;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.two-col { display: flex; gap: 20px; flex-wrap: wrap; }
+table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+th, td { border: 1px solid #2b3858; padding: 4px 8px; text-align: left; }
+th { background: #1c2740; color: #9db4e8; }
+.rule {
+  border: 1px solid #2b3858;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #18203a;
+}
+.rule.pass { border-left: 4px solid #3fb97a; }
+.rule.fail { border-left: 4px solid #e05a75; }
+.rule h3 { margin: 0 0 6px; font-size: 14px; display: flex; gap: 10px; align-items: center; }
+.badge { font-size: 11px; padding: 1px 8px; border-radius: 10px; }
+.badge.pass { background: #143d2a; color: #67e8a3; }
+.badge.fail { background: #3d1620; color: #e87a8f; }
+.badge.mitigated { background: #3d3414; color: #e8c967; }
+.badge.pending { background: #3d2a14; color: #e8a067; }
+.range-chip {
+  display: inline-block;
+  background: #331a26;
+  border: 1px solid #6e3040;
+  color: #f0a2b2;
+  padding: 1px 8px;
+  border-radius: 10px;
+  margin: 2px 6px 2px 0;
+  font-size: 12px;
+}
+.evidence { color: #9fb0d0; font-size: 12.5px; margin-top: 6px; }
+.toast {
+  position: fixed;
+  top: 70px;
+  right: 24px;
+  background: #203050;
+  border: 1px solid #4a639a;
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: none;
+  z-index: 10;
+}
+input, select {
+  background: #0f1626;
+  color: #d8e0ee;
+  border: 1px solid #3a4c72;
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+.suspected {
+  background: #2c2110;
+  border: 1px solid #6e5530;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 6px 0;
+}
+.deviation {
+  background: #1a2340;
+  border: 1px solid #34476f;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 6px 0;
+}
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; margin: 6px 0; }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.sw { width: 12px; height: 4px; display: inline-block; border-radius: 2px; }

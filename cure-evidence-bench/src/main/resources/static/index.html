@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>层合固化证据台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>层合固化证据台</h1>
+  <div id="conclusion" class="conclusion">加载中…</div>
+</header>
+
+<section class="toolbar">
+  <button id="btn-replay">重放评估</button>
+  <button id="btn-export">导出运行记录(JSON)</button>
+  <label class="file-btn">
+    导入复核
+    <input id="file-import" type="file" accept="application/json" hidden>
+  </label>
+  <button id="btn-reset">清空并重置固定夹具</button>
+  <span id="hash-line" class="hash-line"></span>
+</section>
+
+<div id="toast" class="toast"></div>
+
+<main>
+  <section class="card">
+    <h2>规范与炉程</h2>
+    <div id="spec-box"></div>
+    <div id="stage-bar"></div>
+  </section>
+
+  <section class="card">
+    <h2>铺层堆叠（设计 ↔ 实际铺放 ↔ 材料批次）</h2>
+    <div id="ply-wrap" class="two-col">
+      <svg id="ply-svg" width="520" height="330" viewBox="0 0 520 330"></svg>
+      <div id="ply-table"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>热电偶曲线与共同达标证据区间</h2>
+    <div id="tc-controls"></div>
+    <svg id="tc-svg" width="1080" height="420" viewBox="0 0 1080 420"></svg>
+    <div id="soak-summary"></div>
+    <div id="integrity-box"></div>
+  </section>
+
+  <section class="card">
+    <h2>压力 / 真空记录</h2>
+    <svg id="env-svg" width="1080" height="300" viewBox="0 0 1080 300"></svg>
+  </section>
+
+  <section class="card">
+    <h2>规则证据与偏差分支</h2>
+    <div id="rules"></div>
+  </section>
+
+  <section class="card">
+    <h2>运行记录</h2>
+    <div id="runs"></div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

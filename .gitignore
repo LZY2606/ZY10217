@@ -34,3 +34,6 @@ coverage/
 .vite/
 .turbo/
 *.tsbuildinfo
+
+# 层合固化证据台本地数据库
+cure-evidence-bench/data/
