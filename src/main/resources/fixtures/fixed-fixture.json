@@ -1,0 +1,653 @@
+{
+  "version": "FIX-2026.1",
+  "run": {
+    "id": "RUN-CFRP-20260922-A",
+    "partName": "A32 翼根加强层合板",
+    "cureSpecVersion": "CURE-SPEC-7.3",
+    "inputSummary": "8 层预浸料；材料批 M-CFRP-0922；3 支必需热电偶；保温允许带 175-185°C、共同连续保温 1800s；传感器 TC3 在保温中途替换；夹具内含边界样本、时钟回退与重复样本。"
+  },
+  "controlPoints": [
+    {
+      "id": "CP-A",
+      "code": "A",
+      "label": "厚区中心 A",
+      "required": true,
+      "selected": true
+    },
+    {
+      "id": "CP-B",
+      "code": "B",
+      "label": "前缘转角 B",
+      "required": true,
+      "selected": false
+    },
+    {
+      "id": "CP-C",
+      "code": "C",
+      "label": "腹板根部 C",
+      "required": false,
+      "selected": false
+    }
+  ],
+  "materialBatches": [
+    {
+      "id": "MB-1",
+      "materialCode": "CFRP-PREPREG-T700",
+      "batchNo": "M-CFRP-0922",
+      "outTimeMinutes": 310,
+      "outTimeLimitMinutes": 480,
+      "certificateValid": true
+    }
+  ],
+  "designPlies": [
+    {
+      "id": "P-D01",
+      "sequenceNo": 1,
+      "materialCode": "CFRP-PREPREG-T700",
+      "designAngle": 0,
+      "nominalWeightGpm2": 300
+    },
+    {
+      "id": "P-D02",
+      "sequenceNo": 2,
+      "materialCode": "CFRP-PREPREG-T700",
+      "designAngle": 45,
+      "nominalWeightGpm2": 300
+    },
+    {
+      "id": "P-D03",
+      "sequenceNo": 3,
+      "materialCode": "CFRP-PREPREG-T700",
+      "designAngle": -45,
+      "nominalWeightGpm2": 300
+    },
+    {
+      "id": "P-D04",
+      "sequenceNo": 4,
+      "materialCode": "CFRP-PREPREG-T700",
+      "designAngle": 90,
+      "nominalWeightGpm2": 300
+    },
+    {
+      "id": "P-D05",
+      "sequenceNo": 5,
+      "materialCode": "CFRP-PREPREG-T700",
+      "designAngle": 90,
+      "nominalWeightGpm2": 300
+    },
+    {
+      "id": "P-D06",
+      "sequenceNo": 6,
+      "materialCode": "CFRP-PREPREG-T700",
+      "designAngle": -45,
+      "nominalWeightGpm2": 300
+    },
+    {
+      "id": "P-D07",
+      "sequenceNo": 7,
+      "materialCode": "CFRP-PREPREG-T700",
+      "designAngle": 45,
+      "nominalWeightGpm2": 300
+    },
+    {
+      "id": "P-D08",
+      "sequenceNo": 8,
+      "materialCode": "CFRP-PREPREG-T700",
+      "designAngle": 0,
+      "nominalWeightGpm2": 300
+    }
+  ],
+  "actualPlies": [
+    {
+      "id": "P-A01",
+      "designPlyId": "P-D01",
+      "sequenceNo": 1,
+      "materialBatchId": "MB-1",
+      "laidAngle": 0,
+      "operatorId": "OP-14",
+      "laidAt": "2026-09-22T08:00:00+09:00"
+    },
+    {
+      "id": "P-A02",
+      "designPlyId": "P-D02",
+      "sequenceNo": 2,
+      "materialBatchId": "MB-1",
+      "laidAngle": 45,
+      "operatorId": "OP-14",
+      "laidAt": "2026-09-22T08:08:00+09:00"
+    },
+    {
+      "id": "P-A03",
+      "designPlyId": "P-D03",
+      "sequenceNo": 3,
+      "materialBatchId": "MB-1",
+      "laidAngle": -45,
+      "operatorId": "OP-14",
+      "laidAt": "2026-09-22T08:16:00+09:00"
+    },
+    {
+      "id": "P-A04",
+      "designPlyId": "P-D04",
+      "sequenceNo": 4,
+      "materialBatchId": "MB-1",
+      "laidAngle": 90,
+      "operatorId": "OP-07",
+      "laidAt": "2026-09-22T08:25:00+09:00"
+    },
+    {
+      "id": "P-A05",
+      "designPlyId": "P-D05",
+      "sequenceNo": 5,
+      "materialBatchId": "MB-1",
+      "laidAngle": 90,
+      "operatorId": "OP-07",
+      "laidAt": "2026-09-22T08:33:00+09:00"
+    },
+    {
+      "id": "P-A06",
+      "designPlyId": "P-D06",
+      "sequenceNo": 6,
+      "materialBatchId": "MB-1",
+      "laidAngle": -45,
+      "operatorId": "OP-07",
+      "laidAt": "2026-09-22T08:41:00+09:00"
+    },
+    {
+      "id": "P-A07",
+      "designPlyId": "P-D07",
+      "sequenceNo": 7,
+      "materialBatchId": "MB-1",
+      "laidAngle": 45,
+      "operatorId": "OP-14",
+      "laidAt": "2026-09-22T08:49:00+09:00"
+    },
+    {
+      "id": "P-A08",
+      "designPlyId": "P-D08",
+      "sequenceNo": 8,
+      "materialBatchId": "MB-1",
+      "laidAngle": 0,
+      "operatorId": "OP-14",
+      "laidAt": "2026-09-22T08:57:00+09:00"
+    }
+  ],
+  "cureStages": [
+    {
+      "id": "ST-1",
+      "code": "VACUUM_BUILD",
+      "label": "真空建立",
+      "sequenceNo": 1,
+      "startAt": "2026-09-22T09:00:00+09:00",
+      "endAt": "2026-09-22T09:30:00+09:00",
+      "minVacuumKpa": 80
+    },
+    {
+      "id": "ST-2",
+      "code": "RAMP",
+      "label": "升温",
+      "sequenceNo": 2,
+      "startAt": "2026-09-22T09:30:00+09:00",
+      "endAt": "2026-09-22T10:30:00+09:00"
+    },
+    {
+      "id": "ST-3",
+      "code": "SOAK",
+      "label": "保温",
+      "sequenceNo": 3,
+      "startAt": "2026-09-22T10:30:00+09:00",
+      "endAt": "2026-09-22T11:30:00+09:00",
+      "minC": 175,
+      "maxC": 185,
+      "requiredHoldSeconds": 1800,
+      "minVacuumKpa": 80,
+      "minPressureKpa": 580
+    },
+    {
+      "id": "ST-4",
+      "code": "COOL",
+      "label": "降温",
+      "sequenceNo": 4,
+      "startAt": "2026-09-22T11:30:00+09:00",
+      "endAt": "2026-09-22T12:20:00+09:00",
+      "maxC": 60,
+      "minPressureKpa": 580
+    }
+  ],
+  "sensors": [
+    {
+      "id": "TC1",
+      "channel": "TC1",
+      "location": "厚区中心 A",
+      "role": "REQUIRED",
+      "required": true,
+      "active": true
+    },
+    {
+      "id": "TC2",
+      "channel": "TC2",
+      "location": "前缘转角 B",
+      "role": "REQUIRED",
+      "required": true,
+      "active": true
+    },
+    {
+      "id": "TC3",
+      "channel": "TC3",
+      "location": "腹板根部 C",
+      "role": "REQUIRED",
+      "required": true,
+      "active": false
+    },
+    {
+      "id": "TC3R",
+      "channel": "TC3R",
+      "location": "腹板根部 C",
+      "role": "REQUIRED_REPLACEMENT",
+      "required": true,
+      "active": true,
+      "replacesSensorId": "TC3"
+    }
+  ],
+  "temperatureSamples": [
+    {
+      "sensorId": "TC1",
+      "samples": [
+        [
+          "09:00",
+          42,
+          "OK"
+        ],
+        [
+          "09:30",
+          78,
+          "OK"
+        ],
+        [
+          "10:00",
+          142,
+          "OK"
+        ],
+        [
+          "10:20",
+          171,
+          "OK"
+        ],
+        [
+          "10:25",
+          175,
+          "OK"
+        ],
+        [
+          "10:30",
+          177,
+          "OK"
+        ],
+        [
+          "10:35",
+          179,
+          "OK"
+        ],
+        [
+          "10:40",
+          180,
+          "OK"
+        ],
+        [
+          "10:45",
+          181,
+          "OK"
+        ],
+        [
+          "10:50",
+          181,
+          "OK"
+        ],
+        [
+          "10:55",
+          180,
+          "OK"
+        ],
+        [
+          "11:00",
+          180,
+          "OK"
+        ],
+        [
+          "11:05",
+          181,
+          "OK"
+        ],
+        [
+          "11:10",
+          182,
+          "OK"
+        ],
+        [
+          "11:15",
+          185,
+          "OK"
+        ],
+        [
+          "11:20",
+          180,
+          "OK"
+        ],
+        [
+          "11:25",
+          179,
+          "OK"
+        ],
+        [
+          "11:30",
+          176,
+          "OK"
+        ],
+        [
+          "11:45",
+          126,
+          "OK"
+        ],
+        [
+          "12:20",
+          58,
+          "OK"
+        ]
+      ]
+    },
+    {
+      "sensorId": "TC2",
+      "samples": [
+        [
+          "09:00",
+          41,
+          "OK"
+        ],
+        [
+          "09:30",
+          75,
+          "OK"
+        ],
+        [
+          "10:00",
+          132,
+          "OK"
+        ],
+        [
+          "10:20",
+          165,
+          "OK"
+        ],
+        [
+          "10:25",
+          171,
+          "OK"
+        ],
+        [
+          "10:30",
+          175,
+          "OK"
+        ],
+        [
+          "10:35",
+          178,
+          "OK"
+        ],
+        [
+          "10:40",
+          179,
+          "OK"
+        ],
+        [
+          "10:45",
+          180,
+          "OK"
+        ],
+        [
+          "10:44",
+          179,
+          "CLOCK_ROLLBACK"
+        ],
+        [
+          "10:45",
+          180,
+          "DUPLICATE_TIMESTAMP"
+        ],
+        [
+          "10:50",
+          180,
+          "OK"
+        ],
+        [
+          "10:55",
+          179,
+          "OK"
+        ],
+        [
+          "11:00",
+          179,
+          "OK"
+        ],
+        [
+          "11:05",
+          180,
+          "OK"
+        ],
+        [
+          "11:10",
+          181,
+          "OK"
+        ],
+        [
+          "11:15",
+          182,
+          "OK"
+        ],
+        [
+          "11:20",
+          181,
+          "OK"
+        ],
+        [
+          "11:25",
+          178,
+          "OK"
+        ],
+        [
+          "11:30",
+          174,
+          "OK"
+        ],
+        [
+          "11:45",
+          122,
+          "OK"
+        ],
+        [
+          "12:20",
+          56,
+          "OK"
+        ]
+      ]
+    },
+    {
+      "sensorId": "TC3",
+      "samples": [
+        [
+          "09:00",
+          40,
+          "OK"
+        ],
+        [
+          "09:30",
+          72,
+          "OK"
+        ],
+        [
+          "10:00",
+          126,
+          "OK"
+        ],
+        [
+          "10:20",
+          158,
+          "OK"
+        ],
+        [
+          "10:25",
+          168,
+          "OK"
+        ],
+        [
+          "10:30",
+          171,
+          "OK"
+        ],
+        [
+          "10:35",
+          176,
+          "OK"
+        ],
+        [
+          "10:40",
+          178,
+          "OK"
+        ],
+        [
+          "10:45",
+          179,
+          "OK"
+        ],
+        [
+          "10:50",
+          211,
+          "SUSPECTED_FAULT"
+        ]
+      ]
+    },
+    {
+      "sensorId": "TC3R",
+      "samples": [
+        [
+          "10:55",
+          174,
+          "REPLACEMENT_NOT_YET_IN_BAND"
+        ],
+        [
+          "11:00",
+          180,
+          "OK"
+        ],
+        [
+          "11:05",
+          181,
+          "OK"
+        ],
+        [
+          "11:10",
+          180,
+          "OK"
+        ],
+        [
+          "11:15",
+          179,
+          "OK"
+        ],
+        [
+          "11:20",
+          179,
+          "OK"
+        ],
+        [
+          "11:25",
+          177,
+          "OK"
+        ],
+        [
+          "11:30",
+          172,
+          "OK"
+        ],
+        [
+          "11:45",
+          118,
+          "OK"
+        ],
+        [
+          "12:20",
+          55,
+          "OK"
+        ]
+      ]
+    }
+  ],
+  "sensorEvents": [
+    {
+      "id": "EV-TC3-FAULT",
+      "eventType": "SUSPECTED_SENSOR_ANOMALY",
+      "sensorId": "TC3",
+      "eventAt": "2026-09-22T10:50:00+09:00",
+      "detail": "TC3 突升至 211°C，相邻两支热电偶仍位于允许带；待现场确认。",
+      "confirmed": false
+    },
+    {
+      "id": "EV-TC3-REPLACE",
+      "eventType": "SENSOR_REPLACEMENT",
+      "sensorId": "TC3R",
+      "eventAt": "2026-09-22T10:53:00+09:00",
+      "detail": "TC3 拆除，TC3R 在同一控制点替换，替换前后证据强制分段。",
+      "confirmed": false
+    }
+  ],
+  "processSamples": [
+    [
+      "09:00",
+      82,
+      0
+    ],
+    [
+      "09:30",
+      84,
+      0
+    ],
+    [
+      "10:00",
+      85,
+      320
+    ],
+    [
+      "10:30",
+      85,
+      610
+    ],
+    [
+      "10:45",
+      84,
+      608
+    ],
+    [
+      "11:00",
+      84,
+      607
+    ],
+    [
+      "11:15",
+      84,
+      606
+    ],
+    [
+      "11:30",
+      83,
+      602
+    ],
+    [
+      "11:45",
+      82,
+      590
+    ],
+    [
+      "12:20",
+      70,
+      0
+    ]
+  ]
+}
